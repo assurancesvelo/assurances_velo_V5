@@ -1,0 +1,106 @@
+#mainNav {
+  text-transform: uppercase;
+  background-color: $gray-dark;
+  padding: 0.5em 7em 0.5em 7em;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: white;
+        padding: 0em 1em 0em 1em;
+        &.active,
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $gray-dark;
+}
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+  padding: 12px 0;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $gray-dark;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+
+}
+
+@media (max-width: 500px){
+  #mainNav{
+    padding: 0.5em 3em 0.5em 3em;
+  }
+  #mainNav .navbar-brand img{
+    width: 100px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+#mainNav .btn-hide{
+  display:none;
+}
+
+#mainNav #btn-souscrire-nav{
+  padding: 0em 0.5em 0em 0.5em;
+  .btn-orange-souscription-nav{
+    background-color: $orange;
+    color:white;
+    height: 100%;
+    border-radius: 0%;
+    text-transform: uppercase;
+     &:hover{
+      color:white;
+    }
+  }
+}
+
+#mainNav #btn-devis-nav{
+  .btn-black-devis-nav{
+    background-color: transparent;
+    border: solid 1px $orange;
+    color:white;
+    height: 100%;
+    border-radius: 0%;
+    text-transform: uppercase;
+    &:hover{
+     color:white;
+   }
+ }
+}
