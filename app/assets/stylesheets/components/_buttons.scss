@@ -37,6 +37,14 @@
   text-transform: uppercase;
 }
 
+.btn-orange-border{
+  background-color: transparent;
+  color:$orange;
+  border: $orange 1px solid;
+  border-radius:2px;
+  text-transform: uppercase;
+}
+
 .btn-orange-white{
   color: white;
   font-weight: bold;

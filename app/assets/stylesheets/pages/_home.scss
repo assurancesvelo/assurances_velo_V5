@@ -226,6 +226,7 @@
   &:hover{
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
+    border: solid 1px $orange  !important;
   }
   .car-header-faq{
     border-bottom:solid 1px $gray-medium  !important;
@@ -276,6 +277,7 @@
   padding-top:2em;
   padding-bottom:2em;
   background-color: $gray-dark;
+  height:calc(80vh-80px);
   label{
     color:white;
   }
